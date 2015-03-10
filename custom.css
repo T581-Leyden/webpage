@@ -1,0 +1,20 @@
+.glyphicon-pushpin{
+	color: #cdae51;
+	width: 25px;
+}
+
+#page1{
+    display:block;
+}
+
+#page2{
+    display:none;
+}
+
+#page3{
+    display:none;
+}
+
+#footer{
+    clear: all;
+}
