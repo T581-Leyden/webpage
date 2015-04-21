@@ -1,3 +1,20 @@
 body {
     background-color: #FEFCE8;
+    font-family: "Book Antiqua";
+    color: #3D2B1F; 
 }
+
+.placeholders>h1 {
+    padding-top: 65px;
+    font-family: "Zapfino";
+    color: #3D2B1F;
+}
+
+.list-group-item {
+    background-color: #FEFCE8;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #FEFCE8;
+}
+
