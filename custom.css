@@ -41,3 +41,22 @@ h4.override{
   color: #fff;
   background-color: #67C5C2;
 }
+
+.btn-primary {
+    background-color: #67C5C2;
+}
+
+.btn-primary:hover {
+    background-color: #e6e6e6;
+    color: #3D2B1F;
+}
+
+.btn-default {
+    background-color: #C84127;
+    font-family: "Book Antiqua";
+    color: #FFFFFF;
+}
+
+.btn-default:hover {
+    color: #3D2B1F;
+}
