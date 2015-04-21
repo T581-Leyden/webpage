@@ -1,0 +1,98 @@
+.top{
+  position: absolute;
+  top: 0;
+}
+
+.navbar-wrapper{
+    display: inline-block;
+    width: 100%;
+}
+
+.img-responsive{
+    display: inline;
+    height: auto;
+    width: 100%;
+}
+
+.background{
+    position: relative;
+}
+
+#cotton{
+    height: auto;
+    width: 12%;
+    position:absolute;
+    z-index:99;
+    left:52%;
+    bottom:64%;
+}
+
+#corn{
+    height: auto;
+    width: 12%;
+    position:absolute;
+    z-index:99;
+    left:75%;
+    bottom:39%;
+}
+
+#string{
+    height: auto;
+    width: 12%;
+    position:absolute;
+    z-index:99;
+    left:52%;
+    bottom:43%;
+}
+
+#wood{
+    height: auto;
+    width: 12%;
+    position:absolute;
+    z-index:99;
+    left:75%;
+    bottom:22%; 
+}
+
+#bubble{
+    height: auto;
+    width: 22%;
+    position:absolute;
+    z-index:99;
+    left:38%;
+    bottom:21%; 
+}
+
+#droppable { 
+    height: 75%;
+    width: 26%;
+    position:absolute;
+    z-index:99;
+    left:16%;
+    bottom:5%; 
+}
+
+#shells{
+    height: auto;
+    width: 12%;
+    position:absolute;
+    z-index:99;
+    left:75%;
+    bottom:64%;
+}
+
+#beads{
+    height: auto;
+    width: 9%;
+    position:absolute;
+    z-index:99;
+    left:53%;
+    bottom:23%;
+}
+
+#continue{
+    position:absolute;
+    z-index:99;
+    left:50%;
+    bottom:5%;
+}
