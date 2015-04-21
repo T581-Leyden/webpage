@@ -1,6 +1,13 @@
-.glyphicon-pushpin{
-	color: #cdae51;
-	width: 25px;
+h4{
+    color: #C84127;
+}
+
+h4.override{
+    color: #3D2B1F;
+}
+
+.navbar-brand{
+    padding-top: 0px;
 }
 
 #page1{
@@ -17,4 +24,20 @@
 
 #footer{
     clear: all;
+}
+
+.navbar{
+    background-color: #3D2B1F;
+    color: #fff;
+}
+
+.table{
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #67C5C2;
 }
