@@ -1,190 +1,74 @@
-.top{
-  position: absolute;
-  top: 0;
-}
 
-.navbar-wrapper{
-    display: inline-block;
-    width: 100%;
-}
+$("#rowone").show(function(){
+    $("#rowtwo").hide();
+    $("#rowthree").hide();
 
-.img-responsive{
-    display: inline;
-    height: auto;
-    width: 100%;
-}
+$(function() {
+    $( "#string" ).draggable();
+    $( "#wood" ).draggable();
+    $( "#corn" ).draggable();  
+    $( "#cotton" ).draggable();
+    $( "#bubble" ).draggable();
+    $( "#cloth" ).draggable();
+    $( "#shells").draggable();
+    $( "#beads" ).draggable();
+    $( "#dress" ).draggable();  
+    $( "#striped-dress" ).draggable();
+    $( "#chevron-dress" ).draggable();
+    $( "#dot-dress" ).draggable();
+    $( "#hair" ).draggable();
+    $( "#body" ).draggable();
 
-.background{
-    position: relative;
-}
-#bubble{
-    height: auto;
-    width: 34%;
-    position:absolute;
-    z-index:98;
-    left:28%;
-    bottom:15%; 
-}
-
-#speech{
-    height: auto;
-    width: 10%;
-    position:absolute;
-    z-index:99;
-    left:36%;
-    bottom:71%; 
-}
-
-#cotton{
-    height: auto;
-    width: 12%;
-    position:absolute;
-    z-index:99;
-    left:52%;
-    bottom:64%;
-}
-
-#corn{
-    height: auto;
-    width: 12%;
-    position:absolute;
-    z-index:99;
-    left:75%;
-    bottom:39%;
-}
-
-#string{
-    height: auto;
-    width: 12%;
-    position:absolute;
-    z-index:99;
-    left:52%;
-    bottom:43%;
-}
+});
+});
 
 
-#cloth{
-    height: auto;
-    width: 9%;
-    position:absolute;
-    z-index:99;
-    left:75%;
-    bottom:24%; 
-}
-
-#droppable { 
-    height: 32%;
-    width: 32%;
-    position:absolute;
-    z-index:99;
-    left:14%;
-    bottom: 15%;
-}
-
-#feedback { 
-    height: 32%;
-    width: 32%;
-    position:absolute;
-    z-index:99;
-    left:13%;
-    bottom: 50%;
-    background: #FEFCE8;
-    border-style: outset;
-    border-width: 5px; 
-}
-
-#shells{
-    height: auto;
-    width: 12%;
-    position:absolute;
-    z-index:99;
-    left:75%;
-    bottom:64%;
-}
-
-#beads{
-    height: auto;
-    width: 9%;
-    position:absolute;
-    z-index:99;
-    left:53%;
-    bottom:23%;
-}
-
-#text{
-    position:absolute;
-    z-index:99;
-    left: 20%;
-    bottom: 77%
-}
+/**Game**/
+$("#bubble").click(function(){
+    $("#speech").html("Round 2");
+});
 
 
-#continue{
-    position:absolute;
-    z-index:99;
-    left: 80%;
-    bottom: -100px;
-}
+/**History**/
+$("#string").click(function(){
+    $("#text").html("text");
+    $(this).css("border", "solid");
+});
+
+$("#cotton").click(function(){
+    $("#text").html("text");
+    $(this).css("border", "solid");
+});
+
+$("#corn").click(function(){
+    $("#text").html("text");
+    $(this).css("border", "solid");
+});
+
+$("#shells").click(function(){
+    $("#text").html("text");
+    $(this).css("border", "solid");
+});
+ 
+$("#beads").click(function(){
+    $("#text").html("text");
+    $(this).css("border", "solid");
+});
 
 
-#previous{
-    position:absolute;
-    z-index:99;
-    left: 70%;
-    bottom: -100px;
-}
-
-#body{
-    height: auto;
-    width: 30%;
-    position:absolute;
-    z-index:98;
-    left:14%;
-    bottom:-4%;
-}
+$("#cloth").click(function(){
+    $("#text").html("text");
+    $(this).css("border", "solid");
+});
 
 
-#dress{
-    height: auto;
-    width: 30%;
-    position:absolute;
-    z-index:99;
-    left:42%;
-    bottom:43%;
-}
-
-#dot-dress{
-    height: auto;
-    width: 30%;
-    position:absolute;
-    z-index:99;
-    left:62%;
-    bottom:43%;
-}
-
-#chevron-dress{
-    height: auto;
-    width: 30%;
-    position:absolute;
-    z-index:99;
-    left:52%;
-    bottom:22%;
-}
-
-#striped-dress{
-    height: auto;
-    width: 30%;
-    position:absolute;
-    z-index:99;
-    left: 71%;
-    bottom:22%;
-}
-
-#hair{
-    height: auto;
-    width: 16%;
-    position:absolute;
-    z-index:99;
-    left:30%;
-    bottom:39%;
-}
+  $(function() {
+    $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( "feedback" )
+           /*** .addClass( "ui-state-highlight" )
+            .html(""); ***/ 
+      }
+    });
+  });
