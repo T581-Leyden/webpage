@@ -28,11 +28,11 @@
 
 #speech{
     height: auto;
-    width: 34%;
+    width: 10%;
     position:absolute;
     z-index:99;
     left:36%;
-    bottom:75%; 
+    bottom:71%; 
 }
 
 #cotton{
@@ -81,6 +81,18 @@
     bottom: 15%;
 }
 
+#feedback { 
+    height: 32%;
+    width: 32%;
+    position:absolute;
+    z-index:99;
+    left:13%;
+    bottom: 50%;
+    background: #FEFCE8;
+    border-style: outset;
+    border-width: 5px; 
+}
+
 #shells{
     height: auto;
     width: 12%;
@@ -102,8 +114,8 @@
 #text{
     position:absolute;
     z-index:99;
-    left: 30%;
-    bottom: 75%
+    left: 20%;
+    bottom: 77%
 }
 
 
@@ -128,7 +140,7 @@
     position:absolute;
     z-index:98;
     left:14%;
-    bottom:-10%;
+    bottom:-4%;
 }
 
 
@@ -137,15 +149,42 @@
     width: 30%;
     position:absolute;
     z-index:99;
-    left:48 %;
-    bottom:40%;
+    left:42%;
+    bottom:43%;
+}
+
+#dot-dress{
+    height: auto;
+    width: 30%;
+    position:absolute;
+    z-index:99;
+    left:62%;
+    bottom:43%;
+}
+
+#chevron-dress{
+    height: auto;
+    width: 30%;
+    position:absolute;
+    z-index:99;
+    left:52%;
+    bottom:22%;
+}
+
+#striped-dress{
+    height: auto;
+    width: 30%;
+    position:absolute;
+    z-index:99;
+    left: 71%;
+    bottom:22%;
 }
 
 #hair{
     height: auto;
-    width: 14%;
+    width: 16%;
     position:absolute;
     z-index:99;
-    left:75%;
+    left:30%;
     bottom:39%;
 }
