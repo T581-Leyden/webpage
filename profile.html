@@ -6,10 +6,20 @@
 	<title>Leyden Street Toys</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/dashboard.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">    
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <script type='text/javascript' src='timeline.js'></script>
+    <script src="js/respond.js"></script>
+        
+            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+              <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+            <script>
+              $(function() {
+                $("#slider").slider();
+              });
+            </script>
 
-	<script src="js/respond.js"></script>
     </head>
     <body>
 
@@ -22,15 +32,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Leyden St. Toys</a>
+              <a class="navbar-brand" href="#"><img src="img/LeydenLogo.jpg" alt="logo" style="width:92px; float:left"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="home.html">Home</a></li>
+                  <li class="active"><a href="profile.html">Profile</a></li>
                   <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Games &amp; Activities<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Adventures</a></li>
+                    <li><a href="game.html">Adventures</a></li>
                     <li><a href="#">Through the Years</a></li>
                     <li><a href="#">Printables</a></li>
                   </ul>
@@ -38,7 +49,7 @@
                 <li><a href="#about">Parents</a></li>
                 <li><a href="#contact">Teachers</a></li>
               </ul>
-                <div class="btn pull-right"><a class="btn btn-md btn-primary" href="#" role="button" style="float:right;">Sign Out</a></div>
+                <div class="btn pull-right"><a class="btn btn-md btn-primary" href="home.html" role="button" style="float:right;">Sign Out</a></div>
             </div>
           </div>
         </nav>
@@ -47,14 +58,14 @@
 <div class="container-fluid">
 <!---Profile--->     
     <div class="row placeholders">
-    <h1></span>Profile</h1>
+    <h1><span>Profile</span></h1>
         <div class="username">
             <div class="col-xs-6 col-sm-3 placeholder">
                   <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src="img/girl.png" data-holder-rendered="true">
-                  <h4><strong>Name:</strong> Sara M.</h4>
-                  <span class="text-muted"><strong>Age: </strong> 6-9</span>
+                  <h4 class="override"><strong>Name:</strong> Sara M.</h4>
+                  <strong>Age: </strong> 6-9
                 <br>
-                  <span class="text-muted"><strong>From: </strong> Boston, MA</span>
+                  <strong>From:</strong> Boston, MA
             </div>
         </div>
     </div>
@@ -63,17 +74,18 @@
         <div class="about"> 
             <div class="col-md-6">
                     <div class="span"> 
-                     <h4></span><font color="brown">About me:</font></h4>
-                        <ul class="list-group">
-                          <li class="list-group-item"><strong>If I could  live in any time period it would be:</strong> the early 1800’s</li>
-                          <li class="list-group-item"><strong>Because: </strong>I think it would be fun to explore new places and live in a cabin house</li>
-                          <li class="list-group-item"><Strong>My favorite toy is:</Strong> My periwinkle-colored scooter</li>
-                          <li class="list-group-item"><strong>My favorite historical fact is:</strong> Franklin Roosevelt married his 5th cousin
-</li>
-
-                        </ul>
+                     <h4><span><strong>About me:</strong></span></h4>
+                        <div>       
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>If I could  live in any time period it would be:</strong> the early 1800’s</li>
+                                <li class="list-group-item"><strong>Because: </strong>I think it would be fun to explore new places and live in a cabin house</li>
+                                <li class="list-group-item"><Strong>My favorite toy is:</Strong> My periwinkle-colored scooter</li>
+                                <li class="list-group-item"><strong>My favorite historical fact is:</strong> Franklin Roosevelt married his 5th cousin
+                                </li>
+                        </div> 
+                            </ul>
                     <div>
-                    <h4></span><font color="brown">My Activity:</font></h4>
+                    <h4></span><strong>My Activity:</strong></h4>
                         <ul class="list-group">
                           <li class="list-group-item"><em>2 days ago</em> -- Learned new knowledge: France's aid to the Americans significantly contributed to them winning the war</li>
                           <li class="list-group-item"><em>Yesterday</em> -- Learned new knowledge: George Washington was the first president of the United States</li>
@@ -88,13 +100,13 @@
             </div>
                 <div class="col-md-6"> 
                    <div>
-                     <h4></span><font color="brown">Featured Project:</font></h4>
+                     <h4></span><strong>Featured Project:</strong></h4>
                         <tr>
-                            <td><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 420px; height: 420px;">
+                            <td><img class="img-rounded" src="img/RockingHorse.png" alt="Rocking Horse" style="width: 420px; height: 420px;">
 </td>
                         </tr>
                         <tr>
-                          <p><em>Describe your project: </em>The staff at Wisdom worked tirelessly to determine why our three-year old bulldog, Roxie, started going into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normal, but it was still a mystery as to what caused her health to decline so quickly. </p>  
+                          <p><h6><em style="font-size:150%"><strong>Describe your project:</strong></em></h6> This is the rocking horse I made in the Young Republic time period. It is super colorful just like my stuffed horse Penny. I liked learning that rocking horses were first invented much earlier than the 1700's, but this was the time the modern rocking horse was made. It was used to help kids learn how to balance and how to ride horses. I should ask my mom for a rocking horse because I think riding horses is fun. </p>  
                         </tr>             
                     </div>
                 </div>
@@ -102,72 +114,137 @@
 <!---Timeline---> 
             <div class="row">
                 <div class="col-xs-12">
-                    <h4></span><font color="brown">Timeline:</font></h4>
-                        <div class="bar"></div>
-                        <div class="timeline">
-                        <div class="entry">
-                            <h1>1620-1760</h1>
-                                <h2>Colonial America</h2>
-                                    <img src="http://dummyimage.com/300x200/000/fff"/>
-                                        Here's the info about this date
-                        </div>
-                        <div class="entry">
-                            <h1>1760-??</h1>
-                                Here's the info about this date
-                        </div>
-                        <div class="entry">
-                            <h1>2000</h1>
-                                Here's the info about this date
-                        </div>
-                        <div class="entry">
-                            <h1>2005</h1>
-                                Here's the info about this date
-                        </div>
-                        <div class="entry">
-                            <h1>2010</h1>
-                                Here's the info about this date
-                        </div>
-                    </div>
-                </div>       
+                    <h4></span><strong>Timeline:</strong></h4>
+                        <div class="slider">
+                            <div class="bar"></div>
+                            <div class="timeline">
+                            <div class="entry">
+                                <h1>1620-1763</h1>
+                                    <h2>Colonial America</h2>
+                                <div id="1620">
+                                    <div class="btn center-block"><a class="btn btn-sm btn-default" href="game.html" role="button" style="float:center;">Go To Time Period</a></div>
+                                    <i>The early settlers in Plymouth, MA</i></div>
+                            </div>
+
+                            <div class="entry">
+                                <h1>1763-1783</h1>
+                                    <h2>Revolutionary Period</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Fighting for American Independence</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1783-1815</h1>
+                                    <h2>The Young Republic</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>The beginning of a new country</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1815-1860</h1>
+                                    <h2>Western Expansion</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Heading West on the Oregon Trail</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1860-1865</h1>
+                                    <h2>Civil War</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>The North versus the South</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1866-1877</h1>
+                                    <h2>Reconstruction</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Rebuilding the South</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1878-1889</h1>
+                                    <h2>Gilded Age</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Industrialization, urbanization, railroads</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1914-1918</h1>
+                                    <h2>World War I</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>The Allied versus Central Powers</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1920-1929</h1>
+                                    <h2>The Roaring Twenties</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>An era of practicality &amp; breaking traditions</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1929-1939</h1>
+                                    <h2>The Great Depression</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Economic collapse</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1939-1945</h1>
+                                    <h2>World War II</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Holocaust, Pearl Harbor, &amp; the atomic bomb</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1945-1960</h1>
+                                    <h2>Post War</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>The Cold War &amp; Civil Rights Movement</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1960-1980</h1>
+                                    <h2>The Vietnam Era</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>Counterculture &amp; university riots</i>
+                            </div>
+                            <div class="entry">
+                                <h1>1980-2000</h1>
+                                    <h2>End of the Century</h2>
+                                        <div class="btn center-block"><a class="btn btn-sm btn-default" href="#" role="button" style="float:center;">Go To Time Period</a></div>
+                                        <i>The resurgance of Conservatism</i>
+                            </div>
+                            </div>
             </div>
-        </div>
-    </div>
-</div>    
-          <h4 class="sub-header"><font color="brown">Past Projects:</font></h3>
+        </div>    
+          <h4 class="sub-header"><strong>Past Projects:</strong></h3>
+            <div class="slider">
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-striped">  
               <thead>
                 <tr>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>Cup &amp; Ball</th>
+                  <th>Cloth Doll</th>
+                  <th>Rocking Horse</th>
+                  <th>Sled</th>
+                  <th>Yo-Yo</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                  <td><img class="img-rounded" src="img/CupAndBall.png" alt="Cup And Ball" style="width: 140px; height: 140px;">
 </td>
-                  <td><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <td><img class="img-rounded" src="img/Doll.png" alt="Doll" style="width: 140px; height: 140px;">
 </td>
-                  <td><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <td><img class="img-rounded" src="img/RockingHorse.png" alt="Rocking Horse" style="width: 140px; height: 140px;">
 </td>
-                  <td><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                    <td><img class="img-rounded" src="img/Sled.png" alt="Sled" style="width: 140px; height: 140px;">
 </td>
-                  <td><img class="img-rounded" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                  <td><img class="img-rounded" src="img/YoYo.png" alt="YoYo" style="width: 140px; height: 140px;">
 </td>
+                  
+                  
                 </tr>
                 <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
+                  <td>Colonial America</td>
+                  <td>Revolutionary Period</td>
+                  <td>The Young Republic</td>
+                  <td>Reconstruction Era</td>
+                  <td>The Roaring Twenties</td>
                 </tr>
               </tbody>
             </table>
-          </div>
+                </div>
         </div>
       </div>
     </div>
@@ -198,5 +275,7 @@
     <!-- JavaScript -->
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/timeline.js"></script>
+
     </body>
 </html>
