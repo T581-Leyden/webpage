@@ -1,0 +1,9 @@
+body {
+    font-family: "Book Antiqua";
+    color: #3D2B1F;
+}
+
+.HeaderPhoto img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
