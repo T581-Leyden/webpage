@@ -18,7 +18,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -27,15 +27,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Leyden St. Toys</a>
+               <a class="navbar-brand" href="home.html"><img src="img/LeydenLogo.jpg" alt="logo" style="width:92px; float:left"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="home.html">Home</a></li>
+                  <li><a href="profile.html">Profile</a></li>
                   <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Games &amp; Activities<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Adventures</a></li>
+                    <li><a href="game.html">Adventures</a></li>
                     <li><a href="#">Through the Years</a></li>
                     <li><a href="#">Printables</a></li>
                   </ul>
@@ -43,7 +44,7 @@
                 <li><a href="#about">Parents</a></li>
                 <li><a href="#contact">Teachers</a></li>
               </ul>
-                <div class="btn pull-right"><a class="btn btn-md btn-primary" href="#" role="button" style="float:right;">Sign In</a></div>
+                <div class="btn pull-right"><a class="btn btn-md btn-primary" href="home.html" role="button" style="float:right;">Sign Out</a></div>
             </div>
           </div>
         </nav>
@@ -52,14 +53,24 @@
     </div>
             <!-- Nav end -->
             <!-- Sign in -->
-                <div class="container">
+        <div class="column">
+            <div class="col-md-6">
+                <div class="Signup">
+                    <h1>Don't have a character?</h1>
+                    <p><h3><em>Create a free account now!</em></h3></p>
+                <div>
+                    <img class="img-circle" src="img/BaldEagle.png" alt="Character" style="width: 300px; height: 305px;">
+                    <img src="img/AmericanFlag.png" alt="American Flag" style="height: 250px"</div>
+                    <div><button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 300px;">Create Character</button></div>
+                </div>
+                </div>
+            </div>       
+                <div class="col-md-6">
                   <form class="form-signin">
                     </br>
-                    <h2 class="form-signin-heading">Please sign in</h2>
-                    <label for="inputEmail" class="sr-only">Name</label>
-                    <input type="name" id="inputEmail" class="form-control" placeholder="Name" required="" autofocus="">
-                    <label for="inputEmail" class="sr-only">Email address</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">  
+                    <h1>Please sign in</h1>
+                    <label for="inputEmail" class="sr-only">Character Name</label>
+                    <input type="name" id="inputEmail" class="form-control" placeholder="Character Name" required="" autofocus="">  
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
                     <div class="checkbox">
@@ -67,34 +78,19 @@
                         <input type="checkbox" value="remember-me"> Remember me
                       </label>
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <img src="img/Colonists.png" alt="Child Colonists" style="height: 220px;">
+                    <img class="horse"; src="img/SignInToy1.png" alt="Rocking Horse Blue" style="height: 125px;">
+                    <img class="horse"; src="img/SignInToy2.png" alt="Rocking Horse Purple" style="height: 125px;">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 300px;">Sign in</button>
                   </form>
 
-                </div> 
+                </div>
+            
+        </div> 
+                
         <!-- Sign in end -->
         <!-- Three columns of text below the signin -->
-            <div class="container">
-            <div class="row">
-            <div class="col-md-4 col-sm-6"> 
-                  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-                  <h2>Heading</h2>
-                  <p>Donec sed odio dui. </p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-md-4 col-sm-6"> 
-                  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-                  <h2>Heading</h2>
-                <p>Donec sed odio dui. </p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-md-4 col-sm-6"> 
-                  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-                  <h2>Heading</h2>
-                <p>Donec sed odio dui. </p>
-                </div><!-- /.col-lg-4 -->
-              </div>
-        <!-- /.row -->  
-                </div> 
-        
-        
+           
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
