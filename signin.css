@@ -2,13 +2,15 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #eee;
+  font-family: "Book Antiqua";
 }
 
 .form-signin {
-  max-width: 330px;
+  max-width: 500px;  
   padding: 15px;
   margin: 0 auto;
 }
+
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
@@ -37,4 +39,29 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.Signup {
+    margin-top: 25px;
+    margin-botton: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.img-circle {
+    padding: 10px;
+    width: 600px;
+    margin: auto 7px;
+}
+
+.horse {
+    margin-top: 70px;
+}
+
+.form-signin img {
+    margin-bottom: 10px;
+}
+
+.Signup img {
+    margin-bottom: 10px;
 }
