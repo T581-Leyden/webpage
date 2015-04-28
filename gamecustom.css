@@ -17,6 +17,23 @@
 .background{
     position: relative;
 }
+#bubble{
+    height: auto;
+    width: 34%;
+    position:absolute;
+    z-index:98;
+    left:28%;
+    bottom:15%; 
+}
+
+#speech{
+    height: auto;
+    width: 34%;
+    position:absolute;
+    z-index:99;
+    left:36%;
+    bottom:75%; 
+}
 
 #cotton{
     height: auto;
@@ -45,31 +62,23 @@
     bottom:43%;
 }
 
-#wood{
+
+#cloth{
     height: auto;
-    width: 12%;
+    width: 9%;
     position:absolute;
     z-index:99;
     left:75%;
-    bottom:22%; 
-}
-
-#bubble{
-    height: auto;
-    width: 22%;
-    position:absolute;
-    z-index:99;
-    left:38%;
-    bottom:21%; 
+    bottom:24%; 
 }
 
 #droppable { 
-    height: 75%;
-    width: 26%;
+    height: 32%;
+    width: 32%;
     position:absolute;
     z-index:99;
-    left:16%;
-    bottom:5%; 
+    left:14%;
+    bottom: 15%;
 }
 
 #shells{
@@ -90,9 +99,53 @@
     bottom:23%;
 }
 
+#text{
+    position:absolute;
+    z-index:99;
+    left: 30%;
+    bottom: 75%
+}
+
+
 #continue{
     position:absolute;
     z-index:99;
-    left:50%;
-    bottom:5%;
+    left: 80%;
+    bottom: -100px;
+}
+
+
+#previous{
+    position:absolute;
+    z-index:99;
+    left: 70%;
+    bottom: -100px;
+}
+
+#body{
+    height: auto;
+    width: 30%;
+    position:absolute;
+    z-index:98;
+    left:14%;
+    bottom:-10%;
+}
+
+
+#dress{
+    height: auto;
+    width: 30%;
+    position:absolute;
+    z-index:99;
+    left:48 %;
+    bottom:40%;
+}
+
+#hair{
+    height: auto;
+    width: 14%;
+    position:absolute;
+    z-index:99;
+    left:75%;
+    bottom:39%;
 }
