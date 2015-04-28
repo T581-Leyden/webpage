@@ -1,9 +1,27 @@
+body{
+    background-color: #FEFCE8
+}
+
+h1{
+    color: #3D2B1F;
+}
+
+h3{
+    font-size: 20px;
+    color: #3D2B1F;
+}
+
 h4{
     color: #C84127;
 }
 
 h4.override{
     color: #3D2B1F;
+}
+
+h6{
+    color:#3D2B1F;
+    margin-top: 15px;
 }
 
 .navbar-brand{
@@ -59,4 +77,12 @@ h4.override{
 
 .btn-default:hover {
     color: #3D2B1F;
+}
+
+img.display{
+    border: 4px solid #3D2B1F;
+}
+
+.img-rounded{
+    border: 4px solid #3D2B1F;
 }
