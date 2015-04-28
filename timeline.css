@@ -12,13 +12,13 @@ body {
 .entry {
     display:inline-block;
     vertical-align:top;
-    background:#13519C;
+    background:#67C5C2;
     color:#fff;
     padding:10px;
     font-size:12px;
     text-align:center;
     position:relative;
-    border-top:4px solid #06182E;
+    border-top:4px solid #3D2B1F;
     border-radius:3px;
     min-width:200px;
     max-width:500px;
@@ -38,7 +38,7 @@ body {
     width:7px;
     height:7px;
     border-radius:6px;
-    border:3px solid #06182E;
+    border:3px solid #3D2B1F;
     position:absolute;
     left:50%;
     top:-30px;
@@ -48,7 +48,7 @@ body {
 .entry:before {
     content:'';
     display:block;
-    background:#06182E;
+    background:#3D2B1F;
     width:5px;
     height:20px;
     position:absolute;
